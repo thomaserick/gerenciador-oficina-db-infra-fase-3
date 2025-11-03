@@ -15,14 +15,10 @@ output "internet_gateway_id" {
   value       = aws_internet_gateway.gw.id
 }
 
-# Subnets públicas
+# Subnets
 output "public_subnet_ids" {
   description = "Lista de IDs das subnets públicas"
   value       = [for subnet in aws_subnet.public : subnet.id]
 }
 
-# Subnets privadas
-output "private_subnet_ids" {
-  description = "Lista de IDs das subnets privadas"
-  value       = [for subnet in aws_subnet.private : subnet.id]
-}
+
