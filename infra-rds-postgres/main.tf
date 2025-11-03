@@ -16,7 +16,7 @@ module "sg_rds" {
 
 ## RDS Config ##
 module "rds" {
-  source                    = "../modules/rds/single"
+  source                    = "../modules/rds"
   rds_name                  = var.project_name
   database_subnets          = module.vpc.public_subnet_ids
   security_group_id         = [module.sg_rds.security_group_id]
