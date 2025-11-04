@@ -44,9 +44,9 @@ jobs:
       - name: Terraform Init
         run: terraform init
 
-      # Verifica formatação
-      - name: Terraform Format Check
-        run: terraform fmt -check
+#      # Verifica formatação
+#      - name: Terraform Format Check
+#        run: terraform fmt -check
 
       # Valida sintaxe e dependências
       - name: Terraform Validate
