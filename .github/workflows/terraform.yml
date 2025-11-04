@@ -1,7 +1,7 @@
 name: Terraform Deploy Infra RDS Postgres
 
 on:
-  pull_request:
+  push:
     branches:
       - main
   workflow_dispatch: # permite rodar manualmente
