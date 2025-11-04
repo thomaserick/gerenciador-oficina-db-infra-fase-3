@@ -1,5 +1,6 @@
 variable "project_name" { default = "gerenciador-oficina-rds" }
 variable "aws_region" { default = "us-east-1" }
+variable "bucket_name" { default = "gerenciador-oficina-fiap" }
 
 ## RDS Envs ##
 variable "aws_rds_engine" { default = "postgres" }
