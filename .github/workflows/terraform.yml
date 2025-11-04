@@ -1,9 +1,6 @@
-name: Terraform Infra RDS Postgres
+name: Terraform Deploy Infra RDS Postgres
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
     branches:
       - main
