@@ -5,7 +5,6 @@ locals {
   public_subnets = {
     "1a" = cidrsubnet(var.vpc_cidr, 8, 0)
     "1b" = cidrsubnet(var.vpc_cidr, 8, 1)
-    "1c" = cidrsubnet(var.vpc_cidr, 8, 2)
   }
 }
 
