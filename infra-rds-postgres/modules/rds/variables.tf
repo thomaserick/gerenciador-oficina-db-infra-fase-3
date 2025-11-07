@@ -1,4 +1,4 @@
-variable "rds_name" { default = "projeto" }
+variable "rds_name" {  }
 variable "rds_db_name" { default = "postgres" }
 variable "rds_engine" { default = "postgres" }
 variable "rds_engine_version" { default = "16.6" }

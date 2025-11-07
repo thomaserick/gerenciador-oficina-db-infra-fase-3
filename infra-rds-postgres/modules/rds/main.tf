@@ -15,7 +15,7 @@ resource "aws_db_parameter_group" "db_parameter_group" {
 
 
 resource "aws_db_instance" "rds_instance" {
-  identifier              = "${var.rds_name}-instance"
+  identifier              = "${var.rds_name}"
   engine                  = var.rds_engine
   engine_version          = var.rds_engine_version
   instance_class          = var.rds_instance_class
